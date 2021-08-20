@@ -1,0 +1,219 @@
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #2196f3;
+  --fourth-text-color: #ffffff;
+  --special-hide-color: rgba(255, 255, 255, 0.6);
+  --special-color:#000000;
+  --bg-color-one: #2f303a;
+  --bg-color-two:#F5F4FA;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Global class ↓ */
+.list{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+}
+/* Global class ↑ */
+
+/* THE SAME ELEMENTS ↓ */
+/* header-index-portfolio */
+/* webstudio */
+.header-webstudio{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.92;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+.header-studio{
+  color: var(--special-color);
+}
+
+
+/* Navigation-links */
+.nav-links .link:hover,
+.nav-links .link:focus{
+color: var(--third-text-color);
+}
+.header-studio-link,
+.header-portfolio-link, 
+.header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+/* header-contacts-info */
+.header-contacts-info .link:hover,
+.header-contacts-info .link:focus{
+  color: var(--third-text-color);
+}
+.header-mail,
+.header-tel{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+
+/* footer-index-portfolio */
+.footer{
+  background-color: var(--bg-color-one)
+}
+/* footer-webstudio */
+.footer-webstudio{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+.footer-studio{
+  color: var(--fourth-text-color);
+}
+/* address */
+.address{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--fourth-text-color);
+}
+/* footer-contacts-info */
+.footer-contacts-info .link:hover,
+.footer-contacts-info .link:focus{
+  color: var(--third-text-color);
+}
+.footer-mail,
+.footer-tel{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--special-hide-color);
+}
+/* THE SAME ELEMENTS ↑ */
+
+
+/* INDEX */
+/* hero-section */
+.hero-banner{
+  background-color: var(--bg-color-one);
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1,36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fourth-text-color);
+}
+.hero-button{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--fourth-text-color);
+  background-color: var(--third-text-color);
+}
+/* section-two-we-offer */
+.offer-title{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.offer-description{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em
+  var(--second-text-color)
+}
+/* sectiont-what-we-do */
+.what-we-do{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* section-our-team */
+.team{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-name{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-duty{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+
+/* PORTFOLIO  */
+/* main */
+/* filters */
+.filters :hover,
+.filters :focus{
+  color: var(--fourth-text-color);
+}
+/* button? */
+.button{
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color:var(--bg-color-two);
+}
+/* projects */
+.project-name{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.00;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.project-idea{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
