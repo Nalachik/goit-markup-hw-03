@@ -36,7 +36,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 2px solid green;
+  border: 2px solid green; 
 }
 
 /* Global class ↓ */
@@ -52,6 +52,10 @@ ul {
 
 /* THE SAME ELEMENTS ↓ */
 /* header-index-portfolio */
+.header{
+  border-bottom: 1px solid #ECECEC;
+  
+}
 /* webstudio */
 .header-webstudio {
   font-family: Raleway;
@@ -70,8 +74,7 @@ ul {
 
 .header-nav {
   display: flex;
-  align-items: center;
-  justify-content: ;
+  align-items: center; 
 }
 
 .nav-links {
@@ -79,7 +82,6 @@ ul {
   margin-left: 93px;
 }
 .nav-links .item + .item {
-  background-color: hotpink;
   margin-left: 50px;
 }
 
@@ -167,6 +169,7 @@ ul {
 .hero-banner {
   background-color: var(--bg-color-one);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -189,6 +192,11 @@ ul {
   background-color: var(--third-text-color);
 }
 /* section-two-we-offer */
+.we-offer{
+  display: flex;
+  margin: 94px 0px 94px 0px;
+
+}
 .offer-title {
   font-weight: bold;
   font-size: 14px;
