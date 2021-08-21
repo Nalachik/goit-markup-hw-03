@@ -40,6 +40,16 @@ body {
 
 
 /* Navigation-links */
+.nav-links{
+  display: flex;
+
+}
+.nav-links li{
+  background-color: red;
+  margin-right: 50px;
+}
+
+
 .nav-links .link:hover,
 .nav-links .link:focus{
 color: var(--third-text-color);
