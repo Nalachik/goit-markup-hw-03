@@ -4,48 +4,56 @@
   --third-text-color: #2196f3;
   --fourth-text-color: #ffffff;
   --special-hide-color: rgba(255, 255, 255, 0.6);
-  --special-color:#000000;
+  --special-color: #000000;
   --bg-color-one: #2f303a;
-  --bg-color-two:#F5F4FA;
+  --bg-color-two: #f5f4fa;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul{
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.container{
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   border: 2px solid green;
-
 }
 
 /* Global class ↓ */
-.list{
+
+.list {
   list-style: none;
 }
-.link{
+.link {
   text-decoration: none;
 }
+
 /* Global class ↑ */
 
 /* THE SAME ELEMENTS ↓ */
 /* header-index-portfolio */
 /* webstudio */
-.header-webstudio{
+.header-webstudio {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -54,39 +62,33 @@ ul{
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
-.header-studio{
+.header-studio {
   color: var(--special-color);
 }
 
-
 /* Navigation-links */
-.header{
-  border: 2px solid red;
-}
-.header-nav{
+
+.header-nav {
   display: flex;
-  
+  align-items: center;
+  justify-content: ;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
+  margin-left: 93px;
 }
-
-.header-contacts-info{
-  display: flex;
+.nav-links .item + .item {
+  background-color: hotpink;
+  margin-left: 50px;
 }
-.nav-links li{
-  background-color: red;
-  margin-right: 50px;
-}
-
 
 .nav-links .link:hover,
-.nav-links .link:focus{
-color: var(--third-text-color);
+.nav-links .link:focus {
+  color: var(--third-text-color);
 }
 .header-studio-link,
-.header-portfolio-link, 
+.header-portfolio-link,
 .header-contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -94,13 +96,25 @@ color: var(--third-text-color);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+
 /* header-contacts-info */
+.header-contacts-info {
+  display: flex;
+  margin-left: 331px;
+}
+
+.header-contacts-info .item + .item {
+  margin-left: 50px;
+}
+
+/* hover-focus-Header-contact-list-info */
 .header-contacts-info .link:hover,
-.header-contacts-info .link:focus{
+.header-contacts-info .link:focus {
   color: var(--third-text-color);
 }
+
 .header-mail,
-.header-tel{
+.header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -108,13 +122,12 @@ color: var(--third-text-color);
   color: var(--second-text-color);
 }
 
-
 /* footer-index-portfolio */
-.footer{
-  background-color: var(--bg-color-one)
+.footer {
+  background-color: var(--bg-color-one);
 }
 /* footer-webstudio */
-.footer-webstudio{
+.footer-webstudio {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -123,11 +136,11 @@ color: var(--third-text-color);
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
-.footer-studio{
+.footer-studio {
   color: var(--fourth-text-color);
 }
 /* address */
-.address{
+.address {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -136,11 +149,11 @@ color: var(--third-text-color);
 }
 /* footer-contacts-info */
 .footer-contacts-info .link:hover,
-.footer-contacts-info .link:focus{
+.footer-contacts-info .link:focus {
   color: var(--third-text-color);
 }
 .footer-mail,
-.footer-tel{
+.footer-tel {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -149,22 +162,24 @@ color: var(--third-text-color);
 }
 /* THE SAME ELEMENTS ↑ */
 
-
 /* INDEX */
 /* hero-section */
-.hero-banner{
+.hero-banner {
   background-color: var(--bg-color-one);
 }
-.hero-title{
+.hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1,36;
+  line-height: 1, 36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--fourth-text-color);
 }
-.hero-button{
+.hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
@@ -174,7 +189,7 @@ color: var(--third-text-color);
   background-color: var(--third-text-color);
 }
 /* section-two-we-offer */
-.offer-title{
+.offer-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -182,15 +197,14 @@ color: var(--third-text-color);
   text-transform: uppercase;
   color: var(--main-text-color);
 }
-.offer-description{
+.offer-description {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em
-  var(--second-text-color)
+  letter-spacing: 0.03em var(--second-text-color);
 }
 /* sectiont-what-we-do */
-.what-we-do{
+.what-we-do {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -199,7 +213,7 @@ color: var(--third-text-color);
   color: var(--main-text-color);
 }
 /* section-our-team */
-.team{
+.team {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -207,7 +221,7 @@ color: var(--third-text-color);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.team-name{
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -215,7 +229,7 @@ color: var(--third-text-color);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.team-duty{
+.team-duty {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -224,16 +238,15 @@ color: var(--third-text-color);
   color: var(--second-text-color);
 }
 
-
 /* PORTFOLIO  */
 /* main */
 /* filters */
 .filters :hover,
-.filters :focus{
+.filters :focus {
   color: var(--fourth-text-color);
 }
 /* button? */
-.button{
+.button {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -241,17 +254,17 @@ color: var(--third-text-color);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  background-color:var(--bg-color-two);
+  background-color: var(--bg-color-two);
 }
 /* projects */
-.project-name{
+.project-name {
   font-weight: bold;
   font-size: 18px;
-  line-height: 2.00;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 }
-.project-idea{
+.project-idea {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
