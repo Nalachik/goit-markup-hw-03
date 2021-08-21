@@ -13,6 +13,26 @@ body {
   background-color: #ffffff;
 }
 
+p, h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: 2px solid green;
+
+}
+
 /* Global class ↓ */
 .list{
   list-style: none;
@@ -40,9 +60,20 @@ body {
 
 
 /* Navigation-links */
+.header{
+  border: 2px solid red;
+}
+.header-nav{
+  display: flex;
+  
+}
+
 .nav-links{
   display: flex;
+}
 
+.header-contacts-info{
+  display: flex;
 }
 .nav-links li{
   background-color: red;
