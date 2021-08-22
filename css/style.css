@@ -35,8 +35,14 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   border: 2px solid green; 
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
 }
 
 /* Global class ↓ */
@@ -54,7 +60,7 @@ ul {
 /* header-index-portfolio */
 .header{
   border-bottom: 1px solid #ECECEC;
-  
+
 }
 /* webstudio */
 .header-webstudio {
@@ -124,12 +130,14 @@ ul {
   color: var(--second-text-color);
 }
 
-/* footer-index-portfolio */
+/* FOOTER-INDEX-PORTFOLIO */
 .footer {
   background-color: var(--bg-color-one);
 }
 /* footer-webstudio */
 .footer-webstudio {
+  display: block;
+  padding-top: 60px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -143,6 +151,8 @@ ul {
 }
 /* address */
 .address {
+  display: block;
+  padding-top: 20px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -156,6 +166,8 @@ ul {
 }
 .footer-mail,
 .footer-tel {
+  display: block;
+  padding-top: 9px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -163,6 +175,8 @@ ul {
   color: var(--special-hide-color);
 }
 /* THE SAME ELEMENTS ↑ */
+
+
 
 /* INDEX */
 /* hero-section */
@@ -179,6 +193,7 @@ ul {
   text-transform: uppercase;
   color: var(--fourth-text-color);
 }
+
 .hero-button {
   display: block;
   margin-left: auto;
@@ -191,12 +206,22 @@ ul {
   color: var(--fourth-text-color);
   background-color: var(--third-text-color);
 }
+
 /* section-two-we-offer */
 .we-offer{
   display: flex;
-  margin: 94px 0px 94px 0px;
-
+  /* margin: 94px auto 94px auto; */
 }
+
+.we-offer .offer-list + .offer-list{
+  margin-left: 30px;
+}
+
+.offer-list{
+  width: 270px;
+  height: 101px;
+}
+
 .offer-title {
   font-weight: bold;
   font-size: 14px;
@@ -206,13 +231,17 @@ ul {
   color: var(--main-text-color);
 }
 .offer-description {
+  padding-top: 10px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em var(--second-text-color);
 }
-/* sectiont-what-we-do */
+/* section-what-we-do */
 .what-we-do {
+  justify-content: center;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -220,8 +249,28 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+.img-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.img-list .img-item + .img-item{
+  margin-left: 30px;
+}
+
+
+
 /* section-our-team */
+/* Team-flex */
+.team-list{
+  display: flex;
+}
+.team-list .team-item + .team-item{
+  margin-left: 30px;
+}
+
 .team {
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -230,6 +279,8 @@ ul {
   color: var(--main-text-color);
 }
 .team-name {
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -238,6 +289,9 @@ ul {
   color: var(--main-text-color);
 }
 .team-duty {
+  padding-top: 10px;
+  padding-bottom: 30px;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -265,6 +319,7 @@ ul {
   background-color: var(--bg-color-two);
 }
 /* projects */
+
 .project-name {
   font-weight: bold;
   font-size: 18px;
@@ -272,6 +327,7 @@ ul {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 }
+
 .project-idea {
   font-weight: normal;
   font-size: 16px;
