@@ -300,14 +300,28 @@ ul {
   color: var(--second-text-color);
 }
 
+
+
 /* PORTFOLIO  */
 /* main */
 /* filters */
 .filters :hover,
 .filters :focus {
   color: var(--fourth-text-color);
+  background: var(--third-text-color);
 }
-/* button? */
+
+/* filters first <ul> */
+.filters{
+  display: flex;
+  justify-content: center;
+}
+
+.filters .filter-item + .filter-item{
+  margin-left: 8px;
+}
+
+/* button */
 .button {
   cursor: pointer;
   font-weight: 500;
@@ -317,8 +331,12 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   background-color: var(--bg-color-two);
+  border-radius: 4px;
+  border: 0;
 }
-/* projects */
+
+
+/* PROJECTS second <ul> */
 
 .project-name {
   font-weight: bold;
