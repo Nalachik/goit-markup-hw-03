@@ -7,6 +7,8 @@
   --special-color: #000000;
   --bg-color-one: #2f303a;
   --bg-color-two: #f5f4fa;
+  --projects-gap: 30px;
+
 }
 
 body {
@@ -30,6 +32,10 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+img{
+  display: block;
+  max-width: 100%;
+}
 
 .container {
   width: 1200px;
@@ -37,7 +43,8 @@ ul {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 2px solid green; 
+  
+  /* outline: 1px solid green;  */
 }
 .section{
   padding-top: 94px;
@@ -315,6 +322,7 @@ ul {
 .filters{
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 
 .filters .filter-item + .filter-item{
@@ -338,6 +346,40 @@ ul {
 
 /* PROJECTS second <ul> */
 
+.projects{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  margin-left: calc(-1 * var(--projects-gap));
+  margin-top:  calc(-1 * var(--projects-gap));
+}
+.projects > .project{
+  flex-basis: calc(100% / 3 var(--projects-gap));
+  margin-left: var(--projects-gap);
+  margin-top: var(--projects-gap);
+}
+
+/* .projects{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+.project{
+  width: 370px;
+  background-color: tomato;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project:nth-child(3n){
+  margin-right: 0px;
+}
+.project.project:nth-last-child(-n +3){
+  margin-bottom: 0px;
+} */
 .project-name {
   font-weight: bold;
   font-size: 18px;
@@ -352,4 +394,17 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+/*  CARDS-Portfolio*/
+.card{
+  border-bottom: 1px solid #EEEEEE;
+}
+.project-name{
+  padding: ;
+}
+.project-idea{
+  margin-top: 4px;
+}
+.card-content{
+  padding: 20px 24px;
 }
