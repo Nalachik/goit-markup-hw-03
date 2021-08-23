@@ -185,8 +185,7 @@ img{
 
 
 
-/* ↓INDEX ↓*/
-
+/* INDEX */
 /* hero-section */
 .hero-banner {
   background-color: var(--bg-color-one);
@@ -279,7 +278,6 @@ img{
 
 .team {
   margin-bottom: 50px;
-  
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -311,7 +309,7 @@ img{
 
 
 
-/* ↓PORTFOLIO↓  */
+/* PORTFOLIO  */
 /* main */
 /* filters */
 .filters :hover,
@@ -401,6 +399,7 @@ img{
 .card{
   border-bottom: 1px solid #EEEEEE;
 }
+
 .project-idea{
   margin-top: 4px;
 }
