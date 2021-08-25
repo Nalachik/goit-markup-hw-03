@@ -68,7 +68,7 @@ img{
 .header{
   border-bottom: 1px solid #ECECEC;
 
-}
+  }
 /* webstudio */
 .header-webstudio {
   font-family: Raleway;
@@ -93,6 +93,7 @@ img{
 .nav-links {
   display: flex;
   margin-left: 93px;
+  padding: 31px 0px 31px 0px;
 }
 .nav-links .item + .item {
   margin-left: 50px;
@@ -102,6 +103,11 @@ img{
 .nav-links .link:focus {
   color: var(--third-text-color);
 }
+.nav-links .link:active{
+  color: red;
+}
+
+
 .header-studio-link,
 .header-portfolio-link,
 .header-contacts-link {
