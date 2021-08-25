@@ -7,6 +7,7 @@
   --special-color: #000000;
   --bg-color-one: #2f303a;
   --bg-color-two: #f5f4fa;
+  --bg-color-third: #188CE8; 
   --projects-gap: 30px;
 
 }
@@ -35,6 +36,7 @@ ul {
 img{
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -50,6 +52,10 @@ img{
   padding-top: 94px;
   padding-bottom: 94px;
   
+}
+.section_fix_padding{
+  padding-top: 94px;
+  padding-bottom: 0px;
 }
 
 /* Global class ↓ */
@@ -104,7 +110,7 @@ img{
   color: var(--third-text-color);
 }
 .nav-links .link:active{
-  color: red;
+  color: var(--third-text-color);
 }
 
 
@@ -195,6 +201,7 @@ img{
 /* hero-section */
 .hero-banner {
   background-color: var(--bg-color-one);
+  padding: 200px;
 }
 
 .hero-title {
@@ -204,6 +211,8 @@ img{
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 650px;
+  margin: 0px auto 30px auto;
   color: var(--fourth-text-color);
 }
 
@@ -211,13 +220,21 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
   color: var(--fourth-text-color);
   background-color: var(--third-text-color);
+}
+.hero-button :hover,
+.hero-button :focus{
+  color: var(--fourth-text-color);
+  background: var(--bg-color-third);
 }
 
 /* section-two-we-offer */
@@ -275,6 +292,9 @@ img{
 
 /* section-our-team */
 /* Team-flex */
+.our-team{
+  background: var(--bg-color-two);
+}
 .team-list{
   display: flex;
 }
@@ -283,6 +303,7 @@ img{
 }
 
 .team-item{
+  background: var(--fourth-text-color);
   box-shadow: 
   0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -345,6 +366,7 @@ img{
 
 /* button */
 .button {
+  padding: 6px 22px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -411,7 +433,7 @@ img{
 }
 /*  CARDS-Portfolio*/
 .card{
-  border-bottom: 1px solid #EEEEEE;
+  
 }
 
 .project-idea{
@@ -419,4 +441,5 @@ img{
 }
 .card-content{
   padding: 20px 24px;
+  border: 1px solid #EEEEEE;
 }
