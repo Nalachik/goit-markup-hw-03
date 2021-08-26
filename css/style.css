@@ -66,6 +66,12 @@ img{
 .link {
   text-decoration: none;
 }
+.active{
+  color: var(--third-text-color);
+}
+.nav-links .link.active{
+  color: var(--third-text-color);
+}
 
 /* Global class ↑ */
 
@@ -235,11 +241,12 @@ img{
   color: var(--fourth-text-color);
   background-color: var(--third-text-color);
 }
-.hero-button :hover,
-.hero-button :focus{
+.hero-button:hover,
+.hero-button:focus{
   color: var(--fourth-text-color);
-  background: var(--bg-color-third);
+  background-color: var(--bg-color-third);
 }
+
 
 /* section-two-we-offer */
 .we-offer{
