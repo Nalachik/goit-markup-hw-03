@@ -105,7 +105,7 @@ img{
 .nav-links {
   display: flex;
   margin-left: 93px;
-  padding: 31px 0px 31px 0px;
+  padding: 30.5px 0px 30.5px 0px;
 }
 .nav-links .item + .item {
   margin-left: 50px;
